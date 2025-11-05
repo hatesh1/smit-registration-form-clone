@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - SMIT</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome icons (for fb, insta, youtube icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+
+        <div class="logo">
+            <img src="./saylani-logo.png" alt="Saylani Logo">
+        </div>
+
+        <div class="header-row">
+
+            <!-- Left: Student Portal Button -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+
+
+            <!-- Center: Heading -->
+            <h1 class="header-title">Registration Form - SMIT</h1>
+
+
+            <!-- Right: Social Icons -->
+            <button class="student-btn">👩‍🎓 Student Portal</button>
+
+        </div>
+
+        <!-- Third row: light grey text -->
+        <div class="sub-text">
+            <p>Services • Education • Registration</p>
+        </div>
+
+        <!-- HEADER END -->
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+        <!-- Tabs -->
+        <nav class="tabs" role="tablist" aria-label="Main tabs">
+            <button class="tab active" data-target="registration" role="tab" aria-selected="true">Registration</button>
+            <button class="tab" data-target="idcard" role="tab">Download ID Card</button>
+            <button class="tab" data-target="results" role="tab">Results</button>
+        </nav>
+
+        <!-- Tab panels -->
+        <section id="registration" class="tab-panel active" role="tabpanel">
+            <form class="form-grid" autocomplete="off">
+                <!-- existing left/right fields (kept as-is) -->
+                <div class="field">
+                    <label for="country" class="field-label">Select country</label>
+                    <select id="country" name="country" class="field-input">
+                        <option value="">Select country</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="india">India</option>
+                        <option value="usa">United States</option>
+                        <option value="uk">United Kingdom</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="classPref" class="field-label">Select class preference</label>
+                    <select id="classPref" name="classPref" class="field-input">
+                        <option value="">Select class preference</option>
+                        <option>Morning</option>
+                        <option>Evening</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label class="field-label" for="gender">Select gender</label>
+                    <select id="gender" class="field-input">
+                        <option value="">Select gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label class="field-label" for="city">Select city</label>
+                    <select id="city" class="field-input">
+                        <option value="">Select city</option>
+                        <option>Karachi</option>
+                        <option>Lahore</option>
+                        <option>Faisalabad</option>
+                        <option>Hyderabad</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label class="field-label" for="course">Select course or event</label>
+                    <select id="course" class="field-input">
+                        <option value="">Select course or event</option>
+                        <option>Web Development</option>
+                        <option>Data Science</option>
+                        <option>Artificial Intelligence</option>
+                        <option>Graphics Design</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label class="field-label" for="fullname">Full name</label>
+                    <input id="fullname" class="field-input" type="text" placeholder="Full name">
+                </div>
+
+                <div class="field">
+                    <label class="field-label" for="father">Father name</label>
+                    <input id="father" class="field-input" type="text" placeholder="Father name">
+                </div>
+
+                <div class="field">
+                    <label class="field-label" for="email">Email</label>
+                    <input id="email" class="field-input" type="email" placeholder="Email">
+                </div>
+
+                <div class="field">
+                    <label class="field-label" for="phone">Phone</label>
+                    <input id="phone" class="field-input" type="number" maxlength="20" placeholder="Phone">
+                </div>
+
+                <div class="field">
+                    <label class="field-label" for="cnic">CNIC</label>
+                    <input id="cnic" class="field-input" type="number" placeholder="CNIC">
+                </div>
+
+                <div class="field">
+                    <label class="field-label" for="fatherCnic">Father's CNIC (Optional)</label>
+                    <input id="fatherCnic" class="field-input" type="number" placeholder="Father's CNIC (Optional)">
+                </div>
+
+                <div class="field">
+                    <label class="field-label" for="dob">Date of birth</label>
+                    <input id="dob" class="field-input" type="date">
+                </div>
+
+                <div class="field">
+                    <label class="field-label" for="compProf">Select your computer proficiency</label>
+                    <select id="compProf" class="field-input">
+                        <option value="">Select your computer proficiency</option>
+                        <option>None</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label class="field-label" for="laptop">Do you have a Laptop?</label>
+                    <select id="laptop" class="field-input">
+                        <option value="">Do you have a Laptop?</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                </div>
+
+                <!-- ---------- Last qualification / Address / Upload / Declarations ---------- -->
+                <div class="form-section span-full">
+                    <div>
+                        <label class="field-label" for="qualification">Last qualification</label>
+                        <select id="qualification" class="field-input">
+                            <option value="">Last qualification</option>
+                            <option>Matric</option>
+                            <option>Intermediate</option>
+                            <option>Undergraduate</option>
+                            <option>Graduate</option>
+                            <option>Masters</option>
+                            <option>PHD</option>
+                            <option>Others</option>
+                        </select>
+
+                        <label class="field-label" for="address">Address</label>
+                        <input id="address" type="text" placeholder="Address">
+                    </div>
+
+
+                    <div>
+                        <label class="field-label">Picture</label>
+
+                        <div class="upload-section">
+                            <label for="photo" class="upload-box" title="Click to upload">
+                                + Upload
+                            </label>
+                            <input type="file" id="photo" accept=".jpg,.jpeg,.png" style="display:none;">
+
+                            <ul class="upload-info">
+                                <li>With white or blue background</li>
+                                <li>File size must be less than 1MB</li>
+                                <li>File type: jpg, jpeg, png</li>
+                                <li>Upload your recent passport size picture</li>
+                                <li>Your face should be clearly visible without any glasses</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Declarations -->
+                <div class="span-full">
+                    <div class="declaration">
+                        <ol>
+                            <li>I hereby, solemnly declare that the data and facts mentioned herein are true and correct
+                                to the best of my knowledge.</li>
+                            <li>I hereby accept the responsibilities of good conduct and guarantee that I will not be
+                                involved in any other activity, political or ethical, but learning during my stay in the
+                                program.</li>
+                            <li>Defiance will render my admission canceled at any point in time.</li>
+                            <li>Upon completion of the course, I will complete the required project by SWIT.</li>
+                            <li>It’s mandatory for female students to wear abaya/hijab in the class.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Captcha checkbox + Submit -->
+                <div class="span-full">
+                    <div class="captcha">
+                        <input type="checkbox" id="not-robot" />
+                        <label for="not-robot">I'm not a robot</label>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="submit-btn">SUBMIT</button>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+
+        <!-- ID Card panel -->
+        <section id="idcard" class="tab-panel" role="tabpanel" hidden>
+            <div class="panel-inner">
+                <p>Download ID Card panel content — put your fields here.</p>
+                <div class="field"><label class="field-label">Enter CNIC</label><input class="field-input" type="number"
+                        placeholder="CNIC"></div>
+            </div>
+        </section>
+
+        <!-- Results panel -->
+        <section id="results" class="tab-panel" role="tabpanel" hidden>
+            <div class="panel-inner">
+                <p>Results panel content — put your fields here.</p>
+                <div class="field"><label class="field-label">Enter Roll / CNIC</label><input class="field-input"
+                        type="number" placeholder="Roll or CNIC"></div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Tab switching (keeps your existing behaviour)
+        document.querySelectorAll('.tabs .tab').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tabs .tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-panel').forEach(p => { p.classList.remove('active'); p.hidden = true; });
+
+                btn.classList.add('active');
+                const id = btn.dataset.target;
+                const panel = document.getElementById(id);
+                if (panel) { panel.classList.add('active'); panel.hidden = false; }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
