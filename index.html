@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form - SMIT</title>
-
-    <link rel="stylesheet" href="style.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Font Awesome icons (for fb, insta, youtube icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
+    <!-- HEADER START -->
     <header class="main-header">
 
         <div class="logo">
@@ -21,26 +25,24 @@
 
         <div class="header-row">
 
-            <!-- Left: Student Portal Button -->
+            <!-- social icons -->
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram insta"></i></a>
+                <a href="#"><i class="fab fa-youtube youtube"></i></a>
             </div>
-
 
             <!-- Center: Heading -->
             <h1 class="header-title">Registration Form - SMIT</h1>
 
-
-            <!-- Right: Social Icons -->
+            <!-- student portal button -->
             <button class="student-btn">👩‍🎓 Student Portal</button>
 
         </div>
 
-        <!-- Third row: light grey text -->
+        <!-- sub text heading -->
         <div class="sub-text">
-            <p>Services • Education • Registration</p>
+            <p>Services - Education - Registration</p>
         </div>
 
         <!-- HEADER END -->
@@ -59,11 +61,10 @@
         <!-- Tab panels -->
         <section id="registration" class="tab-panel active" role="tabpanel">
             <form class="form-grid" autocomplete="off">
-                <!-- existing left/right fields (kept as-is) -->
                 <div class="field">
                     <label for="country" class="field-label">Select country</label>
-                    <select id="country" name="country" class="field-input">
-                        <option value="">Select country</option>
+                    <select id="country" name="country" class="field-input" required>
+                        <option value="" disabled selected hidden>Select country</option>
                         <option value="pakistan">Pakistan</option>
                         <option value="india">India</option>
                         <option value="usa">United States</option>
@@ -73,8 +74,8 @@
 
                 <div class="field">
                     <label for="classPref" class="field-label">Select class preference</label>
-                    <select id="classPref" name="classPref" class="field-input">
-                        <option value="">Select class preference</option>
+                    <select id="classPref" name="classPref" class="field-input" required>
+                        <option value="" disabled selected hidden>Select class preference</option>
                         <option>Morning</option>
                         <option>Evening</option>
                     </select>
@@ -82,8 +83,8 @@
 
                 <div class="field">
                     <label class="field-label" for="gender">Select gender</label>
-                    <select id="gender" class="field-input">
-                        <option value="">Select gender</option>
+                    <select id="gender" class="field-input" required>
+                        <option value="" disabled selected hidden>Select gender</option>
                         <option>Male</option>
                         <option>Female</option>
                     </select>
@@ -91,8 +92,8 @@
 
                 <div class="field">
                     <label class="field-label" for="city">Select city</label>
-                    <select id="city" class="field-input">
-                        <option value="">Select city</option>
+                    <select id="city" class="field-input" required>
+                        <option value="" disabled selected hidden>Select city</option>
                         <option>Karachi</option>
                         <option>Lahore</option>
                         <option>Faisalabad</option>
@@ -102,8 +103,8 @@
 
                 <div class="field">
                     <label class="field-label" for="course">Select course or event</label>
-                    <select id="course" class="field-input">
-                        <option value="">Select course or event</option>
+                    <select id="course" class="field-input" required>
+                        <option value="" disabled selected hidden>Select course or event</option>
                         <option>Web Development</option>
                         <option>Data Science</option>
                         <option>Artificial Intelligence</option>
@@ -128,7 +129,7 @@
 
                 <div class="field">
                     <label class="field-label" for="phone">Phone</label>
-                    <input id="phone" class="field-input" type="number" maxlength="20" placeholder="Phone">
+                    <input id="phone" class="field-input" type="number" placeholder="Phone">
                 </div>
 
                 <div class="field">
@@ -143,13 +144,13 @@
 
                 <div class="field">
                     <label class="field-label" for="dob">Date of birth</label>
-                    <input id="dob" class="field-input" type="date">
+                    <input id="dob" class="field-input" type="date" required>
                 </div>
 
                 <div class="field">
                     <label class="field-label" for="compProf">Select your computer proficiency</label>
-                    <select id="compProf" class="field-input">
-                        <option value="">Select your computer proficiency</option>
+                    <select id="compProf" class="field-input" required>
+                        <option value="" disabled selected hidden>Select your computer proficiency</option>
                         <option>None</option>
                         <option>Beginner</option>
                         <option>Intermediate</option>
@@ -159,28 +160,29 @@
 
                 <div class="field">
                     <label class="field-label" for="laptop">Do you have a Laptop?</label>
-                    <select id="laptop" class="field-input">
-                        <option value="">Do you have a Laptop?</option>
+                    <select id="laptop" class="field-input" required>
+                        <option value="" disabled selected hidden>Do you have a Laptop?</option>
                         <option>Yes</option>
                         <option>No</option>
                     </select>
                 </div>
 
-                <!-- ---------- Last qualification / Address / Upload / Declarations ---------- -->
-                <div class="form-section span-full">
-                    <div>
-                        <label class="field-label" for="qualification">Last qualification</label>
-                        <select id="qualification" class="field-input">
-                            <option value="">Last qualification</option>
-                            <option>Matric</option>
-                            <option>Intermediate</option>
-                            <option>Undergraduate</option>
-                            <option>Graduate</option>
-                            <option>Masters</option>
-                            <option>PHD</option>
-                            <option>Others</option>
-                        </select>
+                <!-- ---------- Qualification / Address / Upload / Declarations ---------- -->
+                <div class="form-section span-full field">
 
+                    <label class="field-label" for="qualification">Last qualification</label>
+                    <select id="qualification" class="field-input" required>
+                        <option value="" disabled selected hidden>Last qualification</option>
+                        <option>Matric</option>
+                        <option>Intermediate</option>
+                        <option>Undergraduate</option>
+                        <option>Graduate</option>
+                        <option>Masters</option>
+                        <option>PHD</option>
+                        <option>Others</option>
+                    </select>
+
+                    <div class="field">
                         <label class="field-label" for="address">Address</label>
                         <input id="address" type="text" placeholder="Address">
                     </div>
@@ -256,20 +258,12 @@
         </section>
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
+    <footer>
+        © 2025 SMIT Registration Form (Front-end by Hatesh Lakhani)
+    </footer>
 
     <script>
-        // Tab switching (keeps your existing behaviour)
+        // Tab switching javascript (keeps your existing behaviour)
         document.querySelectorAll('.tabs .tab').forEach(btn => {
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.tabs .tab').forEach(t => t.classList.remove('active'));
@@ -282,7 +276,6 @@
             });
         });
     </script>
-
 
 </body>
 
